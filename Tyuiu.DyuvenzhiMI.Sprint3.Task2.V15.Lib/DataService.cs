@@ -10,9 +10,9 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task2.V15.Lib
             double SumSeries = 0;
             do
             {
-                SumSeries += (Math.Pow(value, startValue) + 1 / 2) * Math.Cos(startValue);
+                SumSeries += (Math.Pow(value, startValue) + (1.0/2.0)) * Math.Cos(startValue);
                 startValue++;
-            } while(startValue <= stopValue);
+            } while (startValue <= stopValue);
             return Math.Round(SumSeries, 3);
         }
     }

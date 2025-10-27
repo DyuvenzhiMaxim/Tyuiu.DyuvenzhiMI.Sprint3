@@ -14,7 +14,7 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task2.V15.Test
             int startValue = 1;
             int stopValue = 20;
             double res = ds.GetSumSeries(value, startValue, stopValue);
-            Assert.AreEqual(0.028, res);
+            Assert.AreEqual(0.298, res);
         }
     }
 }
