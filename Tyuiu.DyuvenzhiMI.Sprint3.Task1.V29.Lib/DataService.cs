@@ -8,15 +8,13 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task1.V29.Lib
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double Multiply = 1;
-            double p;
-            double x = value;
-            int i = startValue;
+
             while (startValue <= stopValue)
             {
-                Multiply *= (Math.Pow(x, 2) * i) + 2;
+                Multiply *= (Math.Pow(value, 2) * startValue) + 2;
                 startValue++;
             }
-            return Math.Round(Multiply, 3);
+            return Math.Round(Multiply, 2);
         }
     }
 }
