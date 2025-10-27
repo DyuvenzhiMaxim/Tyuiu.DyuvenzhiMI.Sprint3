@@ -8,16 +8,14 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task5.V28.Lib
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
             double SumSum = 0;
-            for (int i = startValue1; startValue1 <= stopValue1; i++)
+            for (int i = startValue1; i <= stopValue1; i++)
             {
-                for (int k = startValue2; startValue2 <= stopValue2; k++)
+                for (int k = startValue2; k <= stopValue2; k++)
                 {
                     SumSum += Math.Pow(k, x) / Math.Sin(k);
-                    startValue2++;
                 }
-                startValue1++;
             }
-            return Math.Round(SumSum, 2);
+            return Math.Round(SumSum, 3);
         }
     }
 }
