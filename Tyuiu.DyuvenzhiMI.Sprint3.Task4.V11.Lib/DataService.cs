@@ -8,17 +8,18 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task4.V11.Lib
         public double Calculate(int startValue, int stopValue)
         {
             double res = 1;
-            int x;
-            for (x = startValue; startValue <= stopValue; x++)
+            double x;
+            for (x = startValue; startValue < stopValue; x++)
             {
-                if (x == 0) 
+                if (x == 0)
                 {
                     continue;
                 }
+                
                 res *= x / (Math.Sin(x) - x) + 2;
                 startValue++;
             }
-            return Math.Round(res, 3);
+            return Math.Round(res, 2);
         }
     }
 }
