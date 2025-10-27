@@ -1,0 +1,22 @@
+﻿
+using tyuiu.cources.programming.interfaces.Sprint3;
+
+namespace Tyuiu.DyuvenzhiMI.Sprint3.Task1.V29.Lib
+{
+    public class DataService : ISprint3Task1V29
+    {
+        public double GetMultiplySeries(double value, int startValue, int stopValue)
+        {
+            double Multiply = 1;
+            double p;
+            double x = value;
+            int i = startValue;
+            while (startValue <= stopValue)
+            {
+                Multiply *= (Math.Pow(x, 2) * i) + 2;
+                startValue++;
+            }
+            return Math.Round(Multiply, 3);
+        }
+    }
+}
