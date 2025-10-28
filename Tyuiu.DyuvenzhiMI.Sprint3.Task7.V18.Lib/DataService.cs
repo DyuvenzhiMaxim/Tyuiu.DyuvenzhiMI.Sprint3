@@ -14,7 +14,7 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task7.V18.Lib
 
                 if (x == 0) 
                 {
-                    res[i] = (0.0);
+                    res[i] = (2.0);
                     i++;
                     continue;
                 }
