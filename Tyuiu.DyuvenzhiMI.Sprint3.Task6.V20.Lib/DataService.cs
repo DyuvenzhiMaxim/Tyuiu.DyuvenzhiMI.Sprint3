@@ -12,7 +12,7 @@ namespace Tyuiu.DyuvenzhiMI.Sprint3.Task6.V20.Lib
             {
                 for (int y = 1; y <= x; y++)
                 {
-                    if (y < 12) {  count++; }
+                    if (x % y == 0) {  count++; }
                 }
             }
             return count;
